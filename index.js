@@ -18,6 +18,8 @@ setInterval( () => {
   if(iLoad > 3){ iLoad = 0; }
 }, 500)
 
+console.log("jo")
+
 const readline = require('readline');
 const rl = readline.createInterface({
   input: process.stdin,
