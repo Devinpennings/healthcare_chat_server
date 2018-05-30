@@ -1,5 +1,5 @@
 #!/bin/bash
-docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-docker build -f Dockerfile -t $REPO:latest . --build-arg branch=$TRAVIS_TAG
-docker tag $REPO:latest $REPO:$TRAVIS_TAG
+sudo docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+sudo docker build -f Dockerfile -t $REPO:latest . --build-arg branch=$TRAVIS_TAG
+sudo docker tag $REPO:latest $REPO:$TRAVIS_TAG
 sudo docker push $REPO
