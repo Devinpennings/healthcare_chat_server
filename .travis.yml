@@ -16,9 +16,6 @@ install:
 - npm install
 script:
 - npm test
-- docker tag healthcare_chat_server:latest $DOCKER_HUB_USERNAME/healthcare_chat_server:production
-- docker push $DOCKER_HUB_USERNAME/healthcare_chat_server:production
-- ssh -o StrictHostKeyChecking=no -i deploy_key ubuntu@<37.97.247.182 ./Public/deploy.sh
 after_success:
 - curl --ftp-create-dirs -T filename sftp://${SFTP_USER}:${SFTP_PASSWORD}@37.97.247.182/
 before_install: 
