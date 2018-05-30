@@ -8,7 +8,7 @@ var iLoad = 0;
 var loader = ['◜', '◝', '◞', '◟']
 setInterval( () => {
   cCount('Online users: ', runtime.users.filter(  
-                                            function (value) {  
+                                            function (value) {    
                                               return (value.user.status === 'online');  
                                             }).length, 
           ' | Online rooms: ', runtime.getRooms.length, 

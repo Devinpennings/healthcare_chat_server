@@ -1,0 +1,17 @@
+language: node_js
+
+env:
+  global:
+  - 'SFTP_USER=travis'
+  - 'SFTP_PASSWORD=travis123'
+
+node_js:
+  - "8.9.4"
+install:
+  - npm install
+script:
+  - npm test
+fter_success:
+- curl --ftp-create-dirs
+       -T filename
+       sftp://${SFTP_USER}:${SFTP_PASSWORD}@37.97.247.182/
