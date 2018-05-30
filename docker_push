@@ -1,4 +1,6 @@
 #!/bin/bash
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-
-docker push DOCKER_USERNAME/healthcare_chat_server
+docker build -t healthcare_chat_server .
+docker images
+docker tag healthcare_chat_server $DOCKER_USERNAME/healthcare_chat_server
+docker push $DOCKER_USERNAME/healthcare_chat_server

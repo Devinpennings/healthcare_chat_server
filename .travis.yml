@@ -13,8 +13,6 @@ install:
 - npm install
 script:
 - npm test
-after_success:
-- curl --ftp-create-dirs -T filename sftp://${SFTP_USER}:${SFTP_PASSWORD}@37.97.247.182/
 before_install: 
 deploy:
   provider: script
