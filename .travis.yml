@@ -20,11 +20,9 @@ script:
 after_success:
 - curl --ftp-create-dirs -T filename sftp://${SFTP_USER}:${SFTP_PASSWORD}@37.97.247.182/
 before_install:
-- openssl aes-256-cbc -K $encrypted_f3b59f4010df_key -iv $encrypted_f3b59f4010df_iv
-  -in deploy_key.enc -out ./deploy_key -d
 
- deploy:
- provider: script
- skip_cleanup: true
- on:
-   branch: master
+deploy:
+provider: script
+skip_cleanup: true
+on:
+  branch: master
