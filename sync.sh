@@ -1,4 +1,4 @@
 pwd
 whoami
-#git pull
+git pull
 git status
