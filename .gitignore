@@ -5,6 +5,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Deployment
+*.db
+*.sh
+
 # Runtime data
 pids
 *.pid

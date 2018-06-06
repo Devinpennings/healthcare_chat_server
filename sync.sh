@@ -1,3 +1,5 @@
+#!/bin/bash
+cd /var/www/chat/
 pwd
 whoami
 git pull
