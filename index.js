@@ -19,7 +19,7 @@ require('draftlog').into(console)
 //   if(iLoad > 3){ iLoad = 0; }
 // }, 500)
 
-console.log('niet recent');
+console.log('Recente versie');
 console.log('listening on port 3000');
 
 const readline = require('readline');
