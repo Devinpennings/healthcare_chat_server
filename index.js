@@ -19,6 +19,8 @@ require('draftlog').into(console)
 //   if(iLoad > 3){ iLoad = 0; }
 // }, 500)
 
+console.log('listening on port 3000');
+
 const readline = require('readline');
 const rl = readline.createInterface({
   input: process.stdin,
