@@ -1,6 +1,0 @@
-version: '2'
-services:
- app:
-   image: dpennings/healthcare_chat_server:production
-   ports: 
-     - 80:80
