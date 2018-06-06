@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Deployment
-*.db
+database.db
 *.sh
 
 # Runtime data
