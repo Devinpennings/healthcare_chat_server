@@ -2,7 +2,6 @@ const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const uuidv4 = require('uuid/v4');
-const sqlite3 = require('sqlite3').verbose();
 const Database = require('better-sqlite3');
 const db = new Database('database.db');
 const schedule = require('node-schedule');
