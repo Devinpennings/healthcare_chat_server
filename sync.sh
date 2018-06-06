@@ -1,4 +1,5 @@
 #!/bin/bash
+su devin -p Devin12!
 cd /var/www/chat/
 pwd
 whoami
