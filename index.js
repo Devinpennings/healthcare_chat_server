@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const runtime = require('./ChatRuntime'); 
 runtime.setup();
 require('draftlog').into(console)
@@ -17,8 +18,6 @@ setInterval( () => {
   iLoad++;
   if(iLoad > 3){ iLoad = 0; }
 }, 500)
-
-console.log("jo")
 
 const readline = require('readline');
 const rl = readline.createInterface({
