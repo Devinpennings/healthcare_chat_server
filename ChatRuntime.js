@@ -54,7 +54,6 @@ function ChatRuntime()
     });
   }
   this.userConnected = function(user, socket) {
-    // console.log('user ' + user.user_id + ' authenticated')
     user.status = 'online';
     const usr = new User(user, socket);
 
