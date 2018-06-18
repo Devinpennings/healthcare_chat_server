@@ -4,21 +4,21 @@ const program = require('commander');
 runtime.setup();
 require('draftlog').into(console)
 
-let cListening = console.draft();
-let cCount = console.draft();
-let iLoad = 0;
-let loader = ['◜', '◝', '◞', '◟']
-setInterval( () => {
-  cCount('Online users: ', runtime.users.filter(  
-                                            function (value) {    
-                                              return (value.user.status === 'online');  
-                                            }).length, 
-          ' | Online rooms: ', runtime.getRooms.length, 
-          ' | Total messages: ', runtime.getMessages().length);
-  cListening(loader[iLoad], ' Listening on *:3000');
-  iLoad++;
-  if(iLoad > 3){ iLoad = 0; }
-}, 500);
+// let cListening = console.draft();
+// let cCount = console.draft();
+// let iLoad = 0;
+// let loader = ['◜', '◝', '◞', '◟']
+// setInterval( () => {
+//   cCount('Online users: ', runtime.users.filter(  
+//                                             function (value) {    
+//                                               return (value.user.status === 'online');  
+//                                             }).length, 
+//           ' | Online rooms: ', runtime.getRooms.length, 
+//           ' | Total messages: ', runtime.getMessages().length);
+//   cListening(loader[iLoad], ' Listening on *:3000');
+//   iLoad++;
+//   if(iLoad > 3){ iLoad = 0; }
+// }, 500);
 
 console.log('listening on port 3000');
 
