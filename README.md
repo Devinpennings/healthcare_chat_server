@@ -1,3 +1,3 @@
-# healthcare_chat_server
+Socket.IO chat server used by the healthcare application for chatting between patients and doctors.
 
-[![Build Status](https://travis-ci.org/JeroenAndCo/healthcare_chat_server.svg?branch=master)](https://travis-ci.org/JeroenAndCo/healthcare_chat_server)
+School project.
